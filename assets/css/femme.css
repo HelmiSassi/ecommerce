@@ -1,0 +1,177 @@
+body{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    
+    
+
+
+    
+    /*animation-name: shoes;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(0,0,1,1);
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+    
+   */ 
+}
+
+/*@keyframes shoes {
+    25%{background-image: url("../image/293179.jpg");}
+    
+  
+}*/
+@keyframes defiler {
+    0% {
+        transform: translate3d(0,0,0);      /* position initiale à droite */
+      }
+      100% {
+        transform: translate3d(-100%,0,0);  /* position finale à gauche */
+}
+}
+.box{
+    
+    color: rgb(151, 148, 137);
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    grid-column: 1;
+    grid-row: 1;
+   
+}
+.menu{
+    grid-column: span 4;
+    grid-row: 1;
+    height: 20px;
+    padding-top: 0px;
+    text-align: center;
+    color: rgb(46, 56, 53);
+    position: relative;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.defileParent {
+  max-width: 30em;                      /* largeur de la fenêtre */
+  margin: 1em auto 2em;
+  border: 0px solid #F0F0FF;
+  overflow: hidden;                     /* masque tout ce qui dépasse */
+  box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+}
+#defile{
+  display: inline-block;                /* modèle de boîte en ligne */
+  padding-right: 2em;                   /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: defiler 15s infinite linear;
+    
+    
+}
+
+.menu ul{
+    padding: 0px;
+    display: inline-block;
+    margin:auto;
+    
+    
+}
+.nav-item{
+    float: left;
+    list-style-type: none;
+    margin: 0px;
+    
+    
+}
+.nav-item a{
+    text-decoration: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(58, 52, 41);
+    font-weight: bolder;
+    font-size: 10pt;
+    text-align: justify;
+    
+   
+}
+.nav-item a:hover{
+    background-color: lightgoldenrodyellow;
+    padding: 2px;
+    
+}
+.mode{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     
+}
+
+
+.nav-item:hover .mode{
+    display:list-item;
+    padding: 100px;
+    background-color: transparent;
+}
+.mode ul{
+    list-style-type: none;
+}
+
+.breadcrumb{
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: 8pt;
+    border-top: 1px solid;
+    
+    
+}
+.main{
+    grid-column: span 6;
+    grid-row: 3;
+    
+    
+}
+/*.sidebar{
+    grid-column: span 1;
+    grid-row: 3;
+   
+}*/
+.woman{
+    
+    width: 30%;
+    background-color: blanchedalmond;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+
+}
+.dame{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: transparent;
+}
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .woman a{
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+  }
+.footer{
+    grid-column: span 6;
+    grid-row: 4;
+    border-top: groove;
+}
+
+.active{
+    border-bottom:  groove;
+}
+

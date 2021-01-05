@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/connexion.js"></script>
+    <link rel="stylesheet" href="../assets/css/connexion.css">
+    <script src="../js/name.js"></script>
+    
+</head>
+<body onload="draw();">
+    <header class="logo box" >
+        <canvas id="canvas" width="150" height="150"></canvas>
+    </header>
+    <nav class="menu box">
+        <span id="cnx" style="margin-right: 0%;"></span>
+        <div class="defileParent">
+        <div id="defile" >
+            <span>Livraison gratuite chez Shoeshop sur tous les articles.</span> &emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;<span>-10% de résduction à partir de 2 articles achetés!</span></div>
+    </div>
+        <ul style="width: 1000;width: 1000px;">
+            <li class="nav-item box "><a href="name.html" >ACCUEIL</a></li>
+            <li class="nav-item box"><a href="femme.html">FEMME</a>
+            <div class="femme mode">
+                <ul>
+                    <li><a href="">Baskets mode</a></li>
+                    <li><a href="">Bottines / Boots</a></li>
+                    <li><a href="">Bottes</a></li>
+                    <li><a href="">Mules / Sabots</a></li>
+                    <li><a href="">Sandales & Nu-pieds</a></li>
+                    <li><a href="">Pantoufles / Chaussons</a></li>
+                    <li><a href="">Derbies & Richelieu</a></li>
+                    <li><a href="">Tongs</a></li>
+                    <li><a href="">Escarpins</a></li>
+                    <li><a href="">Chaussures de sport</a></li>
+                    <li><a href="">Espadrilles</a></li>
+                    <li><a href="">Ballerines / Babies</a></li>
+
+                </ul>
+            </div>
+            </li>
+            <li class="nav-item box"><a href="homme.html">HOMME</a>
+                <div class="homme mode">
+                    <ul>
+                    <li><a href="">Baskets mode</a></li>
+                    <li><a href="">Bottines / Boots</a></li>
+                    <li><a href="">Bottes</a></li>
+                    <li><a href="">Mules / Sabots</a></li>
+                    <li><a href="">Sandales & Nu-pieds</a></li>
+                    <li><a href="">Pantoufles / Chaussons</a></li>
+                    <li><a href="">Derbies & Richelieu</a></li>
+                    <li><a href="">Tongs</a></li>
+                    <li><a href="">Mocassins & Chaussures bateau</a></li>
+                    <li><a href="">Chaussures de sport</a></li>
+                    <li><a href="">Espadrilles</a></li>
+                    <li><a href="">Skates</a></li>
+    
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item box"><a href="">PROMOS</a></li>
+            <li class="nav-item box"><a href="">RECHERCHER</a></li>
+            <li class="nav-item box"><a href="connexion.html" class="active">CONNEXION</a></li>
+            <li class="nav-item box"><a href="">PANIER</a></li>
+        </ul>
+    </nav>
+    <div class="breadcrumb box">  
+    </div>
+    <main class="main box">
+        
+        <div class="contain">
+            <h2 style="font-family: Roboto;">Espace Client</h2>
+            <form class="env">
+                <div class="inp">
+                <label for="identifiant"> ID CONNEXION :</label>
+                <input type="text" name="identifiant" id="identifiant" style="width:50%;height:30px"><br>
+                </div>
+                <div class="inp">
+                <label for="motDePasse"> MOT DE PASSE :</label>
+                <input type="password" name="mdp" id="mdp" style="width:50%;height:30px">
+                <br>
+                
+                </div>
+                <div style="width: 106.165;height: 15;">
+                    <input type="button" id="connect" value ="se connecter" onclick="connected();">
+                    <button value="reset">annuler</button>
+                </div>
+                <p style="text-align: center;"><a href="">Mot de passe oublié?</a></p>
+                <p id="conx"></p>
+
+            </form>
+        </div>
+
+    </main>
+    <aside class="sidebar box" style="border-left: 1px solid lightgrey">
+        <h5 style="text-align: center;">Vous n'êtes pas encore client?</h5>
+    </aside>
+    <footer class="footer box">
+        
+    </footer>
+    
+</body>
+</html>
